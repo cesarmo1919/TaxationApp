@@ -93,5 +93,30 @@ public interface IAxiizDAO {
 	public List<Fichier> getFichierByIPBXId(Long idIPBX);
 	public List<Ligne> getLigneByGatewayId(Long idGateway);
 	
+	public void deleteEntreprise(Long idEntreprise);
+	public void deleteSecteur(Long idSecteur);
+	public void deleteDirection(Long idDirection);
+	public void deleteDepartement(Long idDepartement);
+	public void deleteService(Long idService);
+	public void deleteEmploye(Long idEmploye);
+	public void deletePhone(Long idPhone);
+	public void deleteLigne(Long idLigne);
+	public void deleteIPBX(Long idIPBX);
+	public void deleteGateway(Long idGateway);
+	public void deleteFichier(Long idFichier);
+	public void deleteFonction(Long idFonction);
+	
+	public void updateEntreprise(Entreprise entreprise);
+	public void updateSecteur(Secteur secteur);
+	public void updateSite(Site site);
+	public void updateDirection(Direction direction);
+	public void updateDepartement(Departement departement);
+	public void updateService(Service service);
+	public void updateEmploye(Employe employe);
+	public void updatePhone(Phone phone);
+	public void updateIPBX(IPBX ipbx);
+	public void updateLigne(Ligne ligne);
+	public void updateGateway(Gateway gateway);
+	public void updateFonction(Fonction fonction);
 
 }
