@@ -1,4 +1,4 @@
-package com.axiiz.app;
+package com.axiiz.app.dao;
 
 import com.axiiz.app.entities.Departement;
 import com.axiiz.app.entities.Direction;
