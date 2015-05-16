@@ -1,5 +1,5 @@
 package com.axiiz.app.entities;
 
-public class CMR {
+public class CMR extends Fichier{
 
 }
