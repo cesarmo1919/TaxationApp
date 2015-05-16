@@ -5,6 +5,12 @@ import java.util.Date;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
+/**
+ * Name: CDR (Communication Data Record)
+ * Specification: Hérité de la classe Fichier, elle représente les données liées au communication
+ * @author Axiiz INC
+ * 
+ */
 @Entity
 @DiscriminatorValue("CDR")
 public class CDR extends Fichier{
