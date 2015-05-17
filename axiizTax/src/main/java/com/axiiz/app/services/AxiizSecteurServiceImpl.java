@@ -12,10 +12,15 @@ public class AxiizSecteurServiceImpl implements IAxiizSecteurService {
 
 	private IAxiizSecteurDAO daoSecteur;
 	
+	
+	public void setDaoSecteur(IAxiizSecteurDAO daoSecteur) {
+		this.daoSecteur = daoSecteur;
+	}
+
 	@Override
-	public Secteur add(Secteur secteur) {
+	public Secteur add(Secteur secteur, Long idEntreprise) {
 		// TODO Auto-generated method stub
-		return daoSecteur.add(secteur);
+		return daoSecteur.add(secteur, idEntreprise);
 	}
 
 	@Override

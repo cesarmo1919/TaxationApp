@@ -12,6 +12,11 @@ public class AxiizEntrepriseServiceImpl implements IAxiizEntrepriseService {
 
 	private IAxiizEntrepriseDAO daoEntreprise;
 	
+	
+	public void setDaoEntreprise(IAxiizEntrepriseDAO daoEntreprise) {
+		this.daoEntreprise = daoEntreprise;
+	}
+
 	@Override
 	public Entreprise add(Entreprise entreprise) {
 		// TODO Auto-generated method stub

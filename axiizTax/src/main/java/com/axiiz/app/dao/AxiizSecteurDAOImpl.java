@@ -6,6 +6,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
+import com.axiiz.app.entities.Entreprise;
 import com.axiiz.app.entities.Secteur;
 
 public class AxiizSecteurDAOImpl implements IAxiizSecteurDAO {
@@ -14,7 +15,9 @@ public class AxiizSecteurDAOImpl implements IAxiizSecteurDAO {
 	private EntityManager em;
 	
 	@Override
-	public Secteur add(Secteur secteur) {
+	public Secteur add(Secteur secteur, Long idEntreprise) {
+		Entreprise entreprise = em.find(Entreprise.class, idEntreprise);
+		secteur.setIdEntreprise(entreprise);
 		em.persist(secteur);
 		return secteur;
 	}

@@ -6,7 +6,7 @@ import com.axiiz.app.entities.Secteur;
 
 public interface IAxiizSecteurDAO {
 
-	public Secteur add(Secteur secteur);
+	public Secteur add(Secteur secteur, Long idEntreprise);
 	public List<Secteur> getAll();
 	public List<Secteur> getByKeyWord(String keyword);
 	public Secteur getById(Long idSecteur);
