@@ -1,4 +1,4 @@
-package com.axiiz.app.dao;
+package com.axiiz.app.service;
 
 import java.util.List;
 
@@ -16,8 +16,7 @@ import com.axiiz.app.entities.Secteur;
 import com.axiiz.app.entities.Service;
 import com.axiiz.app.entities.Site;
 
-public interface IAxiizDAO {
-
+public interface IAxiizService {
 	public Entreprise addEntreprise(Entreprise entreprise);
 	public Secteur addSecteur(Secteur secteur, Long idEntreprise);
 	public Site addSite(Site site, Long idSecteur);
@@ -119,5 +118,4 @@ public interface IAxiizDAO {
 	public void updateLigne(Ligne ligne);
 	public void updateGateway(Gateway gateway);
 	public void updateFonction(Fonction fonction);
-
 }
